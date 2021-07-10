@@ -1,0 +1,68 @@
+.page-title-area{
+    position: relative;
+    .page-title-image{
+        img{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          -o-object-fit: cover;
+          object-fit: cover;
+        }
+      }
+      .page-title-content{
+        padding: 12vmin 0; 
+        position: relative;
+        z-index:4; 
+    }
+    .page-title-author{
+       width: 80px;
+       height: 80px;
+       border-radius: $border-radius;
+       overflow: hidden;
+       img{
+          width: 100%;
+          height: 100%;
+          -o-object-fit: cover;
+          object-fit: cover; 
+       }
+    }
+}
+.page-title-form{ 
+  max-width: 400px;
+  border-radius: $border-radius;
+  input{
+    border:0;
+    background-color: var(--bs-white);
+    &:focus{
+       background-color:var(--bs-white);
+    }
+  }
+  button{
+     padding: 10px 20px;
+     background-color: var(--bs-white);
+     border-color:var(--bs-white);
+     color: var(--bs-secondary); 
+     &:hover{
+        color: var(--bs-success);  
+     }
+  }
+}
+.page-breadcrumb{
+   .breadcrumb{
+     justify-content: center;
+   }
+    ol{
+        margin: 0;
+        font-size: $small-font-size;
+        li{
+            &::before{
+                color:var(--bs-secondary) !important;
+            }
+        }
+        li, li.active, li a{
+             color:var(--bs-secondary);  
+        }
+    }
+ }

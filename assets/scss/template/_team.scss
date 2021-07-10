@@ -1,0 +1,30 @@
+.team-style{
+    position: relative;
+    .team-image{
+        position: relative; 
+        margin-bottom: 15px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: $border-radius;
+            overflow: hidden;
+            transition: $transition-base;
+        }
+    }
+    .team-content{
+        background-color: var(--bs-light);
+        border-radius: $border-radius;
+        text-align: center; 
+        padding:30px 15px;  
+    }
+    &:hover{
+        .team-image{
+            img{
+                filter: blur(2px); 
+                transform: scale(1.1); 
+            } 
+        }
+    }
+}

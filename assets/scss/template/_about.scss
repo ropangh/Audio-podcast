@@ -1,0 +1,116 @@
+.section-title{
+    position: relative;
+    h2{
+        &::after{
+            content: "→";
+            display: inline-block;
+            vertical-align: middle;
+            transform: translate(5px,-6px); 
+        }
+    }
+}
+.about-image{
+    position: relative;
+    overflow: hidden; 
+    img{
+        width: 100%;
+        max-height: 500px;
+        object-fit: cover;
+        border-radius: $border-radius;
+        overflow: hidden;
+        transition: $transition-base;
+    }
+    .mediPlayer{
+        width: 100px;
+        height: 100px;
+        left:0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+        position: absolute;
+        cursor: pointer; 
+        svg{
+            background-color: var(--bs-white);
+            border-radius: 100%;
+            width: 100px;
+           height: 100px;
+        }
+        .progress-track{
+            stroke: var(--bs-light);
+        }
+        .progress-bar{
+           stroke: var(--bs-secondary);
+        }
+        .control{
+            polygon{
+                fill: var(--bs-secondary);
+            }
+        }
+    }
+    &:hover{
+        img{
+            filter: blur(2px); 
+            transform: scale(1.1); 
+        }
+    }
+}
+.morelink{
+    display: inline-block; 
+    font-weight: $font-weight-bold;
+    &:after{
+        content: "→";
+        display: inline-block;
+        vertical-align: middle;
+        transform: translateX(5px);
+        transition: transform .25s ease 0s;
+    }
+    &:hover{
+        color: var(--bs-success);
+        &:after{
+            transform: translateX(10px);
+        }
+    }
+}
+.share-link-social{  
+    margin: 0;
+    li{
+        a{
+            background-color: var(--bs-gray);
+            width: 30px;
+            height: 30px;
+            display: block;
+            text-align: center;
+            color: var(--bs-primary);
+            font-size: $small-font-size;
+            padding: 2px 0px;
+            margin: 5px 0px;
+            transition: $transition-base; 
+            &:hover{
+                 color:var(--bs-primary); 
+                    &.instagram{ 
+                      background-color: var(--bs-instagram); 
+                      }
+                      &.facebook{
+                        background-color: var(--bs-facebook); 
+                      }
+                     &.twitter{
+                      background-color: var(--bs-twitter);  
+                      }
+                    &.linkedin{
+                      background-color: var(--bs-linkedin); 
+                      }
+                      &.github{
+                        background-color: var(--bs-github); 
+                        }
+                    &.pinterest{
+                      background-color: var(--bs-pinterest);  
+                    }
+                    &.whatsapp{
+                      background-color: var(--bs-whatsapp);      
+                    }
+                  }
+          
+          }
+    }
+}

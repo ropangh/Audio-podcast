@@ -1,0 +1,42 @@
+.footer-widget{
+	.footer-logo{
+		img{
+			height: 30px;
+		}
+	}
+	.footer-list{
+        li{
+        	margin:15px 0;
+        	a{ 
+		      color: var(--bs-gray);
+              transition: $transition-base;
+              word-break: break-all;
+              &:hover{
+              	 color:var(--bs-success);
+              }
+        	}
+        }
+	}
+}
+.footer-bottom{ 
+	border-color: var(--bs-light-gray) !important;  
+}
+.home-back{ 
+    position: fixed;
+    right: 1rem;
+    bottom: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: var(--bs-secondary); 
+	color: var(--bs-light) !important; 
+    display: block;
+    border-radius: 100%;
+    font-size: 2rem; 
+    text-align: center;
+    opacity: 0;
+    transition: $transition-base; 
+    z-index: 2; 
+    &.show{
+       opacity: 1;
+    }
+}

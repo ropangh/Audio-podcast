@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" color-mode="light"> 
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Podcast - HTML Site Template</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="images/x-icon" />
+  <!-- gulp:css -->
+  <link rel="stylesheet" href="assets/css/app.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- endgulp -->
+</head>
+
+<body>
+  <div class="preloader"><div class="lds-ripple"><div></div><div></div></div></div>
+  <!--  ====================== Header Area =============================  -->
+  <header class="header-area bg-white">
+      <div class="container">
+        <div class="header-navbar navbar navbar-expand-lg">
+          <a class="navbar-brand" href="index.html"><img src="assets/images/header-logo.png" alt="images"></a>
+          <div class="collapse navbar-collapse" id="navbar-menu">
+            <nav class="header-main-menu">
+              <ul class="navbar-nav">
+                <li class="nav-item"> <a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"> <a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item">
+                  <a class="nav-link toogler" href="#"> Pages </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="team.html">Meet our team</a></li>
+                    <li><a class="dropdown-item" href="press.html">Press Release</a></li>
+                    <li><a class="dropdown-item" href="term.html"> Terms & Conditions</a></li>
+                    <li><a class="dropdown-item" href="privacy.html">Privacy Policy </a></li>
+                    <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                    <li><a class="dropdown-item" href="404.html">404</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link toogler" href="#"> Podcast </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="season.html">Season list</a></li>
+                    <li><a class="dropdown-item" href="episode.html">Episode List</a></li>
+                    <li><a class="dropdown-item" href="podcast-single.html">Podcast Single</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link toogler" href="#"> Blog </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                    <li><a class="dropdown-item" href="blog-sidebar.html">Blog Sidebar</a></li>
+                    <li><a class="dropdown-item" href="author.html">Author</a></li>
+                    <li><a class="dropdown-item" href="tag.html">Tag</a></li>
+                    <li><a class="dropdown-item" href="search.html">Search</a></li>
+                    <li><a class="dropdown-item" href="single.html">Single Blog</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+           
+          </div>
+          <nav class="header-action">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="color-mode__btn nav-link light--hidden" aria-label="Toggle light mode" > <i class="fas fa-sun"></i>   </a>
+                <a   class="color-mode__btn nav-link dark--hidden" aria-label="Toggle dark mode"> <i class="fas fa-star-half-alt"></i>   </a>
+              </li>
+              <li class="nav-item"> <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#headermodal"> <i class="fas fa-search"></i> </a></li>
+              <li class="nav-item"><button class="nav-link" type="button"><div class="burger-box"><div class="burger-inner"></div> </div></button></li>
+            </ul>
+          </nav>
+        </div>
+<!-- Modal -->
+<div class="modal" id="headermodal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="container">
+    <div class="container-wrapper">
+      <div class="modal-body">
+        <div class="headermodal-form">
+           <form action="#">
+               <span><svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <circle cx="12" cy="12" r="10" stroke="currentcolor" stroke-width="3" stroke-linecap="round"></circle>
+                 <path d="M19 19.5l6.5 6.5" stroke="currentcolor" stroke-width="3" stroke-linecap="round"></path>
+               </svg></span>
+               <input type="text" class="control-form" placeholder="Search">
+           </form>
+           <div class="search-close" data-bs-dismiss="modal">
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path fill-rule="evenodd" clip-rule="evenodd" d="M25.542 25.542c.61-.61.61-1.587 0-2.197L2.655.458c-.61-.61-1.587-.61-2.197 0-.61.61-.61 1.587 0 2.197l22.887 22.887c.61.61 1.587.61 2.197 0z" fill="currentcolor"></path>
+                 <path fill-rule="evenodd" clip-rule="evenodd" d="M25.542.458c-.61-.61-1.587-.61-2.197 0L.458 23.345c-.61.61-.61 1.587 0 2.197.61.61 1.587.61 2.197 0L25.542 2.655c.55-.61.55-1.587 0-2.197z" fill="currentcolor"></path>
+               </svg>
+           </div>
+        </div>
+        <div class="search-suggestions">
+           <h3 class="search-title">May we suggest</h3>
+           <div class="search-suggestions">
+              <a class="btn btn-light" href="#">Technolody</a>
+              <a class="btn btn-light" href="#">Episode 10</a>
+              <a class="btn btn-light" href="#">Conversation</a>
+              <a class="btn btn-light" href="#">Audio</a>
+           </div>
+           <h3 class="search-title">Picked for you</h3>
+           <div class="row">
+              <div class="col-md-6 col-lg-4">
+              <article class="search-block">
+                    <img src="assets/images/headermodal-image.jpg" alt="title">
+                    <div class="search-block-content">
+                       <div class="search-block-meta">
+                          <span>Technolody <svg viewBox="0 0 18 27" xmlns="http://www.w3.org/2000/svg"><path d="M2.397 25.426l13.143-11.5-13.143-11.5" stroke-width="3" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+                       </div>
+                       <h6><a href="#">Audio Stories Design Tips to Create Stunning Visuals</a></h6>
+                    </div>
+              </article>
+              </div>
+           </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+<div id="sidebar-navbar"> 
+         <a href="index.html" class="navbar-logo"><img src="assets/images/header-logo.png" alt="title"></a>
+         <h5 class="mb-3">Instagram
+        </h5>
+         <div class="row mb-5">
+           <div class="col-6">
+              <a href="#" class="navbar-inst-feed">
+                  <img src="assets/images/author/1.jpg" alt="title">
+              </a>
+           </div>
+           <div class="col-6">
+              <a href="#" class="navbar-inst-feed">
+                <img src="assets/images/author/2.jpg" alt="title">
+              </a>
+           </div>
+         </div>
+         <h5 class="mb-3">Find Us</h5>
+         <div class="contact-info mb-5">
+            <p>Washton, NY 3234</p>
+            <p>United States</p>
+            <p>+286 544 243</p>
+         </div>
+         <h5 class="mb-3">Share Us</h5>
+         <ul class="share-link-social list-inline">
+          <li class="list-inline-item">
+             <a class="twitter" href="https://twitter.com/" target="_blank">
+               <i class="fab fa-twitter"></i>
+             </a>
+          </li>
+          <li class="list-inline-item">
+             <a class="facebook" href="https://facebook.com/" target="_blank">
+               <i class="fab fa-facebook-f"></i>
+             </a>
+          </li>
+          <li class="list-inline-item">
+             <a class="linkedin" href="https://linkedin.com/" target="_blank">
+               <i class="fab fa-linkedin"></i>
+             </a>
+          </li>
+          <li class="list-inline-item">
+             <a class="pinterest" href="https://www.pinterest.com/" target="_blank">
+               <i class="fab fa-pinterest"></i>
+             </a>
+          </li>
+       </ul>
+      </div>
+      </div> 
+  </header>
+  <!--  ====================== Page Title Area =============================  -->
+  <div class="page-title-area">
+    <div class="page-title-image">
+      <img src="assets/images/page-title-image.jpg" alt="title">
+    </div>
+       <div class="container">
+           <div class="page-title-content text-center">
+                <h2 class="display-5">Tag - tips
+                </h2>
+                <p class="lead fw-normal m-0">7 articles
+
+                </p>
+           </div>
+       </div>
+  </div>
+
+  <!--  ====================== Blog Area =============================  -->
+  <div class="blog-area py-7">
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-6">
+             <div class="blog-style1 mb-4">
+                 <div class="blog-image"><img src="assets/images/blog/1.jpg" alt="title"></div>
+                 <div class="blog-content">
+                  <span class="btn btn-secondary btn-sm">Audio</span>
+                  <h4 class="mt-1"><a href="single.html">Listen To Your Customers. They Will Tell You All About Podcast
+
+                  </a></h4>
+                  <p class="text-muted">After launching its first brand to market, the team reflects on the journey and what’s next for Pattern.</p>
+                  <a class="morelink" href="single.html">Read More</a>
+                </div>
+             </div>
+             
+             <div class="blog-style1 mb-4">
+                 <div class="blog-image"><img src="assets/images/blog/2.jpg" alt="title"></div>
+                 <div class="blog-content">
+                  <span class="btn btn-secondary btn-sm">Records</span>
+                  <h4 class="mt-1"><a href="single.html">Prioritizing Your Podcast To Get The Most Out Of Your Business
+
+                  </a></h4>
+                  <p class="text-muted">After launching its first brand to market, the team reflects on the journey and what’s next for Pattern.</p>
+                  <a class="morelink" href="single.html">Read More</a>
+                </div>
+             </div>
+             
+
+
+
+          </div>
+          <div class="col-lg-6">
+              
+              <div class="blog-style2 mb-4">
+                  <div class="blog-image">
+                    <img src="assets/images/blog/3.jpg" alt="title">
+                  </div>
+                  <div class="blog-content">
+                    <span class="btn btn-secondary btn-sm">Teach</span>
+                   <h5 class="mt-1"><a href="single.html">Are You Embarrassed By Your Podcast Skills? Here's What To Do
+
+                  </a></h5>
+                  <time class="text-muted" datetime="2019-11-19">Nov 19, 2019</time>
+                   <a class="morelink" href="single.html">Read More</a>
+                  </div> 
+              </div>
+              
+              <div class="blog-style2 mb-4">
+                  <div class="blog-image">
+                    <img src="assets/images/blog/4.jpg" alt="title">
+                  </div>
+                  <div class="blog-content">
+                    <span class="btn btn-secondary btn-sm">Latest</span>
+                   <h5 class="mt-1"><a href="single.html">Do You Make These Simple Mistakes In Podcast?
+
+                  </a></h5>
+                  <time class="text-muted" datetime="2019-11-19">Nov 19, 2019</time>
+                   <a class="morelink" href="single.html">Read More</a>
+                  </div> 
+              </div>
+              
+              <div class="blog-style2 mb-4">
+                  <div class="blog-image">
+                    <img src="assets/images/blog/5.jpg" alt="title">
+                  </div>
+                  <div class="blog-content">
+                    <span class="btn btn-secondary btn-sm">Social</span>
+                   <h5 class="mt-1"><a href="single.html">Does Podcast Sometimes Make You Feel Stupid?
+
+                  </a></h5>
+                  <time class="text-muted" datetime="2019-11-19">Nov 19, 2019</time>
+                   <a class="morelink" href="single.html">Read More</a>
+                  </div> 
+              </div>
+              
+              <div class="blog-style2 mb-4">
+                  <div class="blog-image">
+                    <img src="assets/images/blog/6.jpg" alt="title">
+                  </div>
+                  <div class="blog-content">
+                    <span class="btn btn-secondary btn-sm">Singer</span>
+                   <h5 class="mt-1"><a href="single.html">If Podcast Is So Bad, Why Don't Statistics Show It?
+
+                  </a></h5>
+                  <time class="text-muted" datetime="2019-11-19">Nov 19, 2019</time>
+                   <a class="morelink" href="single.html">Read More</a>
+                  </div> 
+              </div>
+              
+              <div class="blog-style2 mb-4">
+                  <div class="blog-image">
+                    <img src="assets/images/blog/7.jpg" alt="title">
+                  </div>
+                  <div class="blog-content">
+                    <span class="btn btn-secondary btn-sm">Topcast</span>
+                   <h5 class="mt-1"><a href="single.html">7 Amazing Tricks To Get The Most Out Of Your Podcast
+
+                  </a></h5>
+                  <time class="text-muted" datetime="2019-11-19">Nov 19, 2019</time>
+                   <a class="morelink" href="single.html">Read More</a>
+                  </div> 
+              </div>
+
+
+          </div>
+       </div>
+    </div>
+ </div>
+  <!--  ======================= Footer Area Start =============================  -->
+  <footer class="footer-area bg-light">
+    <div class="footer-top py-md-7 py-5">
+         <div class="container">
+         <div class="row">
+           <div class="col-md-3 col-lg-4">
+                <div class="footer-widget my-4">
+                     <a href="#" class="footer-logo"><img src="assets/images/footer-logo.png" alt="title"></a>
+                </div>
+           </div>
+           <div class="col-md-9 col-lg-8">
+                <div class="row">
+                  <div class="col-sm-3 col-6">
+                      <div class="footer-widget my-4">
+                           <h4 class="mb-3">Podcast</h4>
+                           <ul class="footer-list list-inline">
+                              <li><a href="#">Our Podcast</a></li>
+                              <li><a href="#">Press Release</a></li>
+                              <li><a href="#">About Us</a></li>
+                           </ul>
+                      </div>
+                  </div>
+                   <div class="col-sm-3 col-6">
+                      <div class="footer-widget my-4">
+                          <h4 class="mb-3">Related</h4>
+                          <ul class="footer-list list-inline">
+                             <li><a href="#"> Terms & Conditions </a></li>
+                             <li><a href="#"> Privacy Policy </a></li>
+                          </ul>
+                      </div>
+                   </div>
+                    <div class="col-sm-3 col-6">
+                        <div class="footer-widget my-4">
+                            <h4 class="mb-3">Contact</h4>
+                            <ul class="footer-list list-inline">
+                                <li><a href="#">+430054452</a></li>
+                                <li><a href="#">info@themeix.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                     <div class="col-sm-3 col-6">
+                         <div class="footer-widget my-4">
+                              <h4 class="mb-3">Follow</h4>
+                            <ul class="footer-list list-inline">
+                                <li><a href="#">Get in touch</a></li>
+                                <li><a href="#">Start a podcast</a></li>
+                            </ul>
+                            <ul class="share-link-social list-inline">
+                              <li class="list-inline-item">
+                                 <a class="twitter" href="https://twitter.com/" target="_blank">
+                                   <i class="fab fa-twitter"></i>
+                                 </a>
+                              </li>
+                              <li class="list-inline-item">
+                                 <a class="facebook" href="https://facebook.com/" target="_blank">
+                                   <i class="fab fa-facebook-f"></i>
+                                 </a>
+                              </li>
+                              <li class="list-inline-item">
+                                 <a class="linkedin" href="https://linkedin.com/" target="_blank">
+                                   <i class="fab fa-linkedin"></i>
+                                 </a>
+                              </li>
+                              <li class="list-inline-item">
+                                 <a class="pinterest" href="https://www.pinterest.com/" target="_blank">
+                                   <i class="fab fa-pinterest"></i>
+                                 </a>
+                              </li>
+                           </ul>
+                         </div>
+                     </div>
+                </div>  
+           </div>
+         </div>
+    </div>
+    </div>
+     <div class="footer-bottom py-4 border-top"> 
+         <div class="container">
+             <p class="text-center m-0">&copy; <span id="spanYear">2021</span> Podcast. Design with <i class="far fa-heart text-success"></i> by <a class="text-success" href="https://themeix.com">themeix</a>.</p>
+         </div>
+     </div>
+     <a class="home-back" href="#"><i class="fas fa-angle-up"></i></a> 
+  </footer>
+  <!-- gulp:js -->
+  <script src="assets/js/build.min.js"></script> 
+  <!-- endgulp -->
+</body>
+</html> 

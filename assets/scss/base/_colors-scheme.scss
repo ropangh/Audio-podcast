@@ -1,0 +1,22 @@
+:root[color-mode="light"] {
+  @each $color, $value in $colors {
+    --#{$variable-prefix}#{$color}: #{$value};
+  }
+  @each $color, $value in $theme-colors {
+    --#{$variable-prefix}#{$color}: #{$value};
+}
+}
+:root[color-mode="dark"] {
+  @each $color, $value in $colors2 {
+    --#{$variable-prefix}#{$color}: #{$value};
+  }
+  @each $color, $value in $theme-colors2 {
+    --#{$variable-prefix}#{$color}: #{$value};
+} 
+} 
+:root[color-mode=light] .light--hidden {
+  display: none;
+}
+:root[color-mode=dark] .dark--hidden {
+  display: none;
+}  

@@ -1,0 +1,129 @@
+// color mode light
+$colors: (
+  "gray":     #7e8898, // body-color
+  "light-gray": #e6e6e6, 
+  "instagram": #8a3ab9, 
+  "facebook": #3b5998,  
+  "twitter": #1da1f2, 
+  "linkedin": #0e76a8, 
+  "pinterest": #c8232c, 
+  "github": #202299, 
+  "whatsapp": #209971, 
+) !default;
+$theme-colors: (
+  "primary":   #ffffff,
+  "secondary": #2c323c,  // heading-color
+  "success":   #c172ea, 
+  "info":     #28a77d,
+  "warning":   #ffc107,
+  "danger":    #fd8c54,
+  "light":    #f3f3f3, 
+  "white":    #ffffff,    
+  "dark":    #000000,   
+) !default;
+
+
+// color mode dark
+$colors2: (   
+  "gray":     #a8a8a8, // body-color  
+  "light-gray": #424954,   
+  "instagram": #8a3ab9, 
+  "facebook": #3b5998,  
+  "twitter": #1da1f2, 
+  "linkedin": #0e76a8, 
+  "pinterest": #c8232c,  
+  "whatsapp": #209971,  
+) !default;
+$theme-colors2: (
+  "primary":   #27292D,
+  "secondary":  #ffffff, // heading-color
+  "success":   #c172ea, 
+  "info":     #28a745,
+  "warning":   #ffc107,
+  "danger":    #fd8c54,
+  "light":  #343b45,
+  "white": #2c323c,  
+  "dark": #000000,
+) !default;
+
+
+// body color          
+$body-color: var(--bs-gray);       
+$link-hover-color:var(--bs-primary);
+$text-muted: var(--bs-gray);     
+$headings-color:var(--bs-primary);
+// Forms
+$input-bg: transparent;   
+// Typography
+
+$font-size-base: 1rem; 
+$font-family-base:  'Open Sans', sans-serif; 
+$headings-font-family:'Noto Sans', sans-serif;
+$font-weight-bold: 700;
+$headings-font-weight: 700;
+$font-weight-normal: 400;
+$line-height-base: 1.8;
+$headings-line-height: 1.3;
+$headings-color: var(--bs-secondary);
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+$display-line-height: 1.3;  
+$display-font-weight: 700;
+
+// Component
+$border-radius: 10px;
+$border-radius-sm: 5px;
+$border-radius-lg: 20px;
+$box-shadow: 0 0 25px rgba(0, 0, 0, 0.08); 
+$box-shadow-lg:  rgba(0, 0, 0, 0.15) 0 10px 101px 0;
+$modal-fade-transform: scale(1);
+$card-border-width:0;
+// Spacing
+$spacer: 0.9375rem;
+$spacers: ();
+$spacers: map-merge((0: 0,
+1: ($spacer * .25),
+2: ($spacer * .5),
+3: ($spacer * 1),
+4: ($spacer * 2),
+5: ($spacer * 3),
+6: ($spacer * 4),
+7: ($spacer * 5),
+8: ($spacer * 6),
+9: ($spacer * 7),
+10: ($spacer * 15)),
+$spacers); 
+
+// Buttons
+
+$btn-font-weight: $font-weight-normal;
+$input-btn-padding-y: .6rem;
+$input-btn-padding-x: 1rem;
+$input-btn-padding-y-sm: .2rem;
+$input-btn-padding-x-sm: .8rem;
+$input-btn-padding-y-lg: .6rem; 
+$input-btn-padding-x-lg: 2rem;  
+
+// Progress bars
+
+$progress-height: 1rem;
+$progress-bg: var(--bs-light);
+
+// Badges
+
+$badge-font-size: .65em;
+$badge-padding-y:  .2rem;
+$badge-padding-x:  .6rem;
+
+// variable prefix
+$variable-prefix:  bs-; 
+
+
+
+
+
+
